@@ -1,5 +1,6 @@
 module.exports = {
   extends: [
+    'plugin:react-hooks/recommended',
     'plugin:@iskl/ts-typecheck', // 或者 plugin:@iskl/eslint-plugin/vue-ts-typecheck
   ],
   overrides: [
