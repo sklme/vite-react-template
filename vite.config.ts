@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import WindiCSS from 'vite-plugin-windicss';
@@ -12,6 +13,13 @@ export default defineConfig({
   resolve: {
     alias: {
       '~': `${path.resolve(__dirname, 'src')}`,
+    },
+  },
+  test: {
+    environment: 'happy-dom',
+    coverage: {
+      provider: 'c8',
+      reportsDirectory: './.vitest_output/coverage',
     },
   },
 });

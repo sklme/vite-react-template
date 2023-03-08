@@ -1,0 +1,18 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Root的信息 > 快照 1`] = `
+<div>
+  <div
+    className="title"
+  >
+    我是root
+  </div>
+  <button
+    onClick={[Function]}
+  >
+    点击了 
+    0
+     次
+  </button>
+</div>
+`;
